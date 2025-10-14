@@ -1,9 +1,42 @@
 # Kickstart Keybindings
 
+## Basic Vim Motions
+
+| Key | Description |
+|---|---|
+| `h` | Move left |
+| `j` | Move down |
+| `k` | Move up |
+| `l` | Move right |
+| `w` | Move to the start of the next word |
+| `b` | Move to the start of the previous word |
+| `e` | Move to the end of the current word |
+| `0` | Move to the beginning of the line |
+| `$` | Move to the end of the line |
+| `gg` | Go to the first line of the file |
+| `G` | Go to the last line of the file |
+| `^` | Move to the first non-blank character of the line |
+| `I` | Insert at the beginning of the line |
+| `A` | Insert at the end of the line |
+| `o` | Open a new line below the current line and enter insert mode |
+| `O` | Open a new line above the current line and enter insert mode |
+| `v` | Enter visual mode |
+| `V` | Enter visual line mode |
+| `<C-v>` | Enter visual block mode |
+| `y` | Yank (copy) |
+| `p` | Paste after the cursor |
+| `P` | Paste before the cursor |
+| `d` | Delete |
+| `c` | Change |
+| `u` | Undo |
+| `<C-r>` | Redo |
+| `.` | Repeat the last command |
+| `x` | Delete character under the cursor |
+| `r` | Replace character under the cursor |
+| `~` | Switch case of the character under the cursor |
+
 ## Global & Basic Keybindings (`init.lua`)
 
-- `<leader>` is mapped to the `<Space>` key.
-- `<Esc>` (Normal mode): Clears search highlights.
 - `<leader>q` (Normal mode): Opens the diagnostic quickfix list.
 - `<leader>a` (Normal mode): Select all text.
 - `<Esc><Esc>` (Terminal mode): Exits terminal mode.
