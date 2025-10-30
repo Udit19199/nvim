@@ -146,6 +146,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- Keybind to select all text
 vim.keymap.set('n', '<leader>a', 'ggVG', { desc = 'Select all' })
+vim.keymap.set('n', '<C-s>', '<cmd>w<CR>', { desc = 'Save file' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
@@ -597,7 +598,7 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         svelte = {},
-        -- clangd = {},
+        clangd = {},
         -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
