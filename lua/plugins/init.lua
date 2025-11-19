@@ -1,0 +1,16 @@
+return {
+  require 'plugins.autopairs',
+  require 'plugins.colorscheme',
+  require 'plugins.debug',
+  require 'plugins.gitsigns',
+  require 'plugins.indent_line',
+  require 'plugins.lint',
+  require 'plugins.lsp',
+  require 'plugins.markview',
+  require 'plugins.mini',
+  require 'plugins.neo-tree',
+  require 'plugins.telescope',
+  require 'plugins.todo-comments',
+  require 'plugins.treesitter',
+  require 'plugins.which-key',
+}

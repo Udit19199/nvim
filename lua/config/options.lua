@@ -15,6 +15,14 @@ vim.o.smartcase = true
 -- Keep signcolumn on by default
 vim.o.signcolumn = 'yes'
 
+-- Sync clipboard between OS and Neovim.
+--  Schedule the setting after `UiEnter` because it can increase startup-time.
+--  Remove this option if you want your OS clipboard to remain independent.
+--  See `:help 'clipboard'`
+vim.schedule(function()
+  vim.o.clipboard = 'unnamedplus'
+end)
+
 -- Decrease update time
 vim.o.updatetime = 250
 
