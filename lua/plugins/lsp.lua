@@ -14,7 +14,17 @@ return {
   {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
-    event = 'BufReadPre',
+    ft = {
+      'lua',
+      'javascript',
+      'typescript',
+      'tsx',
+      'python',
+      'go',
+      'c',
+      'cpp',
+      'svelte',
+    },
     dependencies = {
       -- Automatically install LSPs and related tools to stdpath for Neovim
       -- Mason must be loaded before its dependents so we need to set it up here.
@@ -214,6 +224,7 @@ return {
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
+        'ruff', -- Used to lint Python code
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

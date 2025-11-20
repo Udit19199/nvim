@@ -1,8 +1,11 @@
 return {
   require 'plugins.autopairs',
+  require 'plugins.blink-cmp',
+  require 'plugins.conform',
   require 'plugins.colorscheme',
   require 'plugins.debug',
   require 'plugins.gitsigns',
+  require 'plugins.guess-indent',
   require 'plugins.indent_line',
   require 'plugins.lint',
   require 'plugins.lsp',
